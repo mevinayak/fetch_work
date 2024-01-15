@@ -1,0 +1,4 @@
+[http]
+        sslVerify = true
+        sslCAPath = /Users/kumarvinayak/health_monitor/venv/ssl/cacert.pem
+        sslCAInfo = /Users/kumarvinayak/health_monitor/venv/ssl/cacert.pem

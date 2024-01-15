@@ -1,0 +1,13 @@
+prefix=/Users/kumarvinayak/health_monitor/venv
+exec_prefix=/Users/kumarvinayak/health_monitor/venv
+libdir=/Users/kumarvinayak/health_monitor/venv/lib
+sharedlibdir=/Users/kumarvinayak/health_monitor/venv/lib
+includedir=/Users/kumarvinayak/health_monitor/venv/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
