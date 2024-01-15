@@ -32,9 +32,6 @@ def main(file_path):
 
     try:
         while True:
-            # Read and parse the configuration file
-
-            # Perform health checks for each endpoint
             for endpoint in config:
                 result = send_http_request(endpoint)
                 domain = endpoint['url'].split('//')[1].split('/')[0]
@@ -44,7 +41,6 @@ def main(file_path):
                     url_status_dict[domain]['up_status'] += 1
                 url_status_dict[domain]['total'] += 1
 
-            # Log availability percentage for each domain
             for url, status in url_status_dict.items():
                 availability_percentage = calculate_percentage(status['up_status'], status['total'])
                 print(f"{url} has {availability_percentage}% availability percentage")
