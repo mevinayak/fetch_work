@@ -44,9 +44,7 @@ def main(file_path):
             for url, status in url_status_dict.items():
                 availability_percentage = calculate_percentage(status['up_status'], status['total'])
                 print(f"{url} has {availability_percentage}% availability percentage")
-                print(url_status_dict)
 
-            # Wait for 15 seconds before the next cycle
             time.sleep(15)
     
     #Press Ctrl+C to abort
